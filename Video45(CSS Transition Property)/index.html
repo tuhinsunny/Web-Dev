@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition Property</title>
+    <style>
+        .container{
+            background-color: antiquewhite;
+            height: 40vh;
+            width: 50vw;
+        }
+        .box{
+            background-color: aqua;
+            height: 4vh;
+            width: 8vw;
+            /* transition-property: transform; */
+            /* transition-property: all; */
+            /* transition-property: background-color, transform;
+            transition-duration: 3s;
+            /* transition-timing-function: ease-in-out;Check this property from inspect. No need to learn */
+            /* transition-timing-function: cubic-bezier(1, 0.02, 0, 0.98);
+            transition-delay: 1s;Yeh animation/transition kitni der bad chalega  */
+            /*All the above in single line*/
+            /* transition: all 3s ease-in-out 1s; */
+            transition: all 2s cubic-bezier(0, 1.41, 0.86, 0.11) 0.5s;
+        }
+        .translate{
+            transform: translateX(10vw) translateY(10vh) scale(2);
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box translate"></div>
+    </div>
+</body>
+</html>

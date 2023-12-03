@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on selectors</title>
+    <style>
+        /* .box:first-child {
+            background-color: aqua;
+        } */
+        /* .box::first-line{
+            color: yellow;1st line of the big paragraph will be yellow
+        } */
+        /* .boxes *{/*.boxes ke andar sare elements ke liye apply ho jayga
+            color: blue;
+            border : 2px solid black;
+        }
+        p, a, .box, [data-color="primary"]{
+            margin-top: 45px;
+            padding-top: 45px;
+        } */
+
+        /* .box:nth-child(odd){
+            background-color: blue;
+        } */
+        /* .box:nth-last-child(1){
+            background-color: red;
+        } */
+        /* We can insert content dynamically through CSS . These are called Pseudo elements*/
+        /* .boxes::before{
+            content: "Tuhin is good";
+            color: blue;
+        }
+        .boxes::after{
+            content : "Tuhin is a very good boy";
+            color: red;
+        } */
+
+        /* ::selection{ /*Will apply whenever we select the text or anything
+            background-color: black;
+            color: rgb(15, 204, 141);
+        } */
+
+        .box::first-letter{
+            color: rgb(249, 7, 249);
+            font-size: 45px;
+        }
+        input::placeholder{
+            color: rgb(147, 147, 73)55, 255, 16);
+        }
+    </style>
+</head> 
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Hey I am box 1</div>
+        <div class="box">Hey I am box 2</div>
+        <div class="box">Hey I am box 3</div>
+    </div>
+    <input type="text" placeholder="Input your name here">
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox </title>
+    <style>
+        .container{
+            border: 2px solid red;
+            display: flex;
+            height: 80vh;
+            /* justify-content: center;Horizontally center */
+            align-items: center;/*Vertically center*/
+            /* flex-direction: column; Saare items vertically lay kar dega */
+            /* flex-direction: column-reverse; Will lay the items vertically in reverse order  */
+            /* SImilarly we have row and row-reverse */
+            /* flex-wrap: wrap;The items will be displayed in the next line */
+            /* align-content: center;Will align all the lines in centre */
+            /* align-content: flex-start; */
+            /* flex-wrap: wrap-reverse; Will wrap the items in reverse */
+            /* flex-flow: row wrap; flex-flow : <flex-direction> <flex-wrap> */
+            /* gap: 30px;Denotes the gap between items */
+            row-gap: 30px;
+            column-gap: 10px;
+            gap: 30px 10px;/*This denotes the above*/
+
+        }
+        .items{
+            flex-grow: 1;
+            height: 60px;
+            width: 60px;
+            background-color: aqua;
+            /* margin: 4px; */
+            border: 2px solid black;
+        }
+        .item1{
+            /* flex-grow: 2;This box will take the space of 2 boxes aur saare items ek hi row mein ayenge */
+            flex-shrink: 2;/*The item will shrink if necessary. 2 times speed se shrink hoga*/
+            align-self: flex-end;
+        }
+        .item2{
+            align-self: flex-start;
+        }
+        /* JIska sabse zyada order hoga woh last pe ayga
+        .order-1{
+            order: 1;
+            flex-grow: 2;
+        }
+        .order-2{
+            order: 2;
+        }
+        .order-3{
+            order: 3;
+        }
+        .order-100{
+            order: 100;
+        } */
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="items item1">1</div>
+            <div class="items">2</div>
+            <div class="items item2">3</div>
+            <div class="items">4</div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+            <div class="items"></div>
+        </div>
+    </main>
+</body>
+</html>

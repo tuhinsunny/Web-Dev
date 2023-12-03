@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transforms MasterClass</title>
+    <style>
+        .box{
+            height: 50px;
+            width: 50px;
+            background-color: beige;
+            border: 2px solid black;
+            /* transform: rotate(40deg); */
+            /* transform: rotate(0.25turn);1 turn = 360 degree */
+            /* transform: rotateX(45deg); */
+            /* transform: rotateY(45deg); */
+            /* transform: rotateZ(30deg); */
+            /* transform: scale(1.5); 1.5 times bada ho jayga */
+            /* transform: scaleX(1.5);1.5 times bada hoga in X axis */
+            /* transform: skew(10deg); Skew z axis mein nahi hota */
+            /* transform: translateY(100%) skew(40deg) translateX(45%); If we do -100% then the box will hide */
+            transform: rotate(45deg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform-origin: 0% 0%;/*We can use it to rotate around a particular point by changing the values*/
+        }
+        .container{
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+        Box
+        </div>
+    </div>
+</body>
+</html>

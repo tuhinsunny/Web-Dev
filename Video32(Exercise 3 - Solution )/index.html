@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Design</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0;
+        }
+        body{
+            background-color: grey;
+            padding: 45px;
+            display: flex;
+        }
+        .card{
+            background-color: white;
+            width: 294px;/*If we don't give the height it will auto adjust*/
+            border-radius: 7px;
+            padding: 0px 0px 34px 0px;
+            margin: 5px;
+        }
+        .image{
+            padding: 7px;
+        }
+        .image img{
+            border-radius: 7px;
+        }
+        .content{
+            padding: 10px;
+        }
+        .content p{
+            padding: 10px 0px;
+        }
+        .capsules{
+            padding: 10px 28px 0px;
+        }
+        .capsules span{
+            border: 2px solid black;
+            padding : 4px 10px;
+            border-radius: 20px;
+        }
+        .button{
+            text-align: center;
+        }
+        .button button{
+            background-color: aqua;
+            padding: 6px 15px;
+            border-radius: 15px;   
+            border: none;
+            margin-top: 5px; 
+            font-size: 15px;
+            font-weight: bold;
+            color: rgb(25, 155, 207);
+            cursor: pointer;/*Will point*/
+        }
+        .button button:hover{
+            background-color: aquamarine;
+        }
+        @media only screen and (max-width : 455px){
+            body{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="image">
+            <img src="https://images.pexels.com/photos/2163224/pexels-photo-2163224.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" width="280px">
+        </div>
+        <div class="capsules">
+            <span>Nature</span>
+            <span>Lake</span>
+        </div>
+        <div class="content">
+            <h1>Tuhin</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut incidunt dolor, ducimus cum similique at hic tempora eveniet asperiores eos quo. Beatae, esse.</p>
+        </div>
+        <div class="button">
+            <button>Submit</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="image">
+            <img src="https://images.pexels.com/photos/2163224/pexels-photo-2163224.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" width="280px">
+        </div>
+        <div class="capsules">
+            <span>Nature</span>
+            <span>Lake</span>
+        </div>
+        <div class="content">
+            <h1>Tuhin</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut incidunt dolor, ducimus cum similique at hic tempora eveniet asperiores eos quo. Beatae, esse.</p>
+        </div>
+        <div class="button">
+            <button>Submit</button>
+        </div>
+    </div>
+</body>
+</html>

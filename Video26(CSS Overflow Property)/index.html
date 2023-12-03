@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow</title>
+    <style>
+        .box{
+            width: 30vw;
+            height: 10vh;
+            border: 2px solid black;
+            overflow : auto; /*If it overflows then only we will be able to see scroll bar*/
+            /* overflow: scroll; will always schow a scroll bar */
+            /* white-space: nowrap;-WIll show everything horizontally */
+            /* text-overflow: ellipsis; . ajata hai */
+            /* overflow-x: hidden;
+            overflow-y: scroll; */
+            overflow: hidden auto; /* x : hidden y : auto and vice versa if positions changed*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        I am a boy and I love to write Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit odio incidunt voluptates sunt possimus. Officiis praesentium inventore voluptatum esse iure odio maxime neque! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores totam vero animi delectus iste. Architecto animi commodi ipsam sed maxime, expedita debitis officiis?
+    </div>
+</body>
+</html>

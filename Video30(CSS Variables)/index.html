@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        /*CSS Variables can hold any time of values or colors*/
+        :root{
+            /*Declaring global variables*/
+            /* If we change the values here it will be reflected wherever the variables are used */
+            --color : blue;
+            --seccolor : lightblue;
+            --defpad : 23px;
+            --defop : 0.6;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        .nav{
+            background-color: var(--color);
+
+        }
+        .container{
+            background-color: var(--seccolor);
+        }
+        ul{
+            display: flex;
+        } 
+        ul li{
+            opacity: var(--defop);
+            list-style: none;
+            padding: var(--defpad);
+            border : 2px solid var(--seccolor)
+        }
+        ul li:first-child{
+            --color : red; /*This is a local variable only applicable for this block*/
+            background-color: var(--color, green); /*If color name ka koi bhi variable is not found then green apply ho jayga*/
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nostrum eveniet, sit saepe qui quibusdam omnis facere placeat. Corrupti dicta optio praesentium, ducimus maiores at eos dolorum dolorem dolore repudiandae eligendi asperiores doloremque, voluptas molestiae autem est maxime sunt sint fugit sit labore magni non?
+    </div>
+</body>
+</html>

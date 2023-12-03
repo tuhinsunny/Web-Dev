@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters</title>
+    <style>
+        /* img{
+            filter: blur(10px);
+        } */
+        .img1{
+            filter: brightness(120%) contrast(1.5);
+            display: block;
+            /* filter: invert(.30); */
+        }
+        .img2{
+            filter: grayscale(80%) opacity(50%);
+            display: block;
+        }
+        .img3{
+            filter: sepia(100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="img1" src="https://i.pinimg.com/1200x/15/ca/0c/15ca0c352322cb9101e20e423ec34554.jpg" alt="">
+        <img src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/akshay-kumar-94-1681713982.jpg" alt="" class="img2">
+        <img src="https://resources.pulse.icc-cricket.com/photo-resources/2022/11/05/e61cd1f0-23de-46f7-afd4-07ea4004e3a5/Kohli-smile.jpg?width=985&height=580" alt="" class="img3">
+    </div>
+</body>
+</html>

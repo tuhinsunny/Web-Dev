@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /*ELement Selector*/
+        /* div{
+            background-color: red;
+        } */
+        /*CLass Selector*/
+        .red{
+            background-color: red;
+        }
+        /* Id Selector */
+        #green{
+            background-color: green;
+        }
+        /* Child Selector */
+        div > p{ /*div ke immediate bad mein agar p rahega to apply ho jayga*/
+            color: blue;
+            background-color: aqua;
+        }
+        /* Descendent Selector */
+        div span{ /* div ke andar kahi bhi span rahega to apply ho jayga waha par*/
+            color : white;
+            background-color: black;
+        }
+        /*Universal Selector*/
+        *{ /*Applies to all */
+            padding: 0;
+            margin: 0;
+        }
+        /* Pseudo Selector */
+        a:visited{
+            color:yellow;
+        }
+        a:link{ /*Not yet visited*/
+            color:rgb(48, 6, 86);
+        }
+        a:active{ /*When we click on the link the color wll be red on click*/
+            background-color: red;
+        }
+        a:hover{ /*When we just take the mouse over the link it will change to yellow*/
+            background-color: yellow;
+        }
+        p:first-child{
+            background-color: orange;
+        }
+        
+    </style>    
+</head>
+<body>
+    <main class="one">
+        <p>I am the first</p>
+        <p>I am the second</p>
+    </main>
+    <div class = "red">
+        I am div 
+    </div>
+    <div>
+        <p>I am another div</p>
+    </div>
+    <div id = "green">
+        This is yet another div
+    </div>
+    <div>
+        <article>
+            <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, et.</span>
+        </article>
+    </div>
+    <a href="https://www.google.com">Go to google</a>
+    <a href="https://www.facebook2.com">Go to facebook</a>
+</body>
+</html>

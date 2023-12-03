@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear</title>
+    <style>
+        img{
+            float: right;
+        }
+        .cards{
+            border: 2px solid black;
+            display: flow-root;/*The image will not overflow. With this we can fit the elements within the container*/
+        }
+        .card{
+            border: 2px solid red;
+        }
+        .card:nth-child(3){
+            background-color: aqua;
+            clear: right;/*iske right side mein koi floating element nahi rahega. We can also use clear : right or left or both*/
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="https://images.pexels.com/photos/19087661/pexels-photo-19087661/free-photo-of-men-swimming-on-boat-in-tropical-forest.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" width="250px">
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quidem dolorem in sapiente, deleniti excepturi ipsum suscipit accusantium recusandae vel provident non ipsam, ad iure facere, nulla illum facilis amet explicabo quo nisi. Asperiores. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, harum exercitationem?</div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic harum placeat eos facilis pariatur ipsum beatae nobis dolorem deserunt quo! Iusto inventore placeat libero reprehenderit quia quos et repellendus nemo rem, officia a obcaecati mollitia quae dicta sapiente consequuntur deserunt? Similique necessitatibus neque veniam placeat animi nisi alias porro iusto recusandae beatae quam tenetur, fugit consequuntur sunt commodi dolor nobis aspernatur autem ipsa possimus exercitationem esse officia soluta sed? Veniam temporibus molestiae vel tempore aspernatur doloremque animi expedita quia doloribus earum perferendis optio, voluptatum, porro neque reiciendis nam quisquam illum cupiditate dolore corrupti voluptates. Illum eum ipsa repellendus quaerat nobis reiciendis delectus voluptatibus? Necessitatibus iusto mollitia officia numquam, vitae commodi temporibus porro, fugit ad sapiente blanditiis aperiam. Nostrum, quae obcaecati repellendus consectetur consequatur fugit omnis nesciunt veniam impedit odio architecto eos accusamus, ab officia est. Repellendus a, nihil, tenetur tempora quas placeat porro nobis impedit accusantium blanditiis dolorem consequatur? Doloribus nihil corrupti magnam a? At voluptatum ipsum culpa illo facilis voluptates recusandae hic eum, officiis nesciunt aliquam vitae. Iste cupiditate quam sit vitae quia dolore, at laborum! Quaerat itaque culpa tempora illum aut accusantium veritatis fuga aspernatur nulla error. Aperiam rerum vero quasi deleniti saepe aliquam eligendi fugit deserunt quod nesciunt labore voluptatem architecto ad, dicta ea. Nisi tempora, iure sequi quis pariatur quisquam modi aliquid illum repellat neque, nam autem iusto? Error voluptates doloremque, aliquam rem fuga exercitationem alias nihil. Exercitationem, aspernatur fugit. Eos.</div>
+        <div class="card">Card 3</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("Assets/Images/backgroundimg.jpg");
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 644px;
+    position: relative;
+}
+
+.main .box {
+    height: 644px;
+    width: 100%;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    max-width: 80vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+nav img {
+    color: red;
+    width: 130px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+}
+
+.hero> :nth-child(1) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.separation {
+    height: 7px;
+    background-color: rgb(46, 44, 44);
+    position: relative;
+    z-index: 10;
+}
+
+.btn-red {
+    padding: 12px 24px 12px 24px;
+    height: 56px;
+    width: 209.25px;
+    min-height: 56px;
+    min-width: auto;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+}
+
+.btn-red:hover {
+    background-color: rgb(202, 22, 22);
+    cursor: pointer;
+}
+
+.btn-red-sm {
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    background-color: red;
+    height: 34px;
+    width: 77px;
+    padding: 4px 11px;
+    border-radius: 4px;
+}
+
+.hero input {
+    font-size: 16px;
+    text-align: left;
+    padding: 12px 24px;
+    height: 28px;
+    border-radius: 4px;
+    width: 337px;
+    min-height: 16px;
+    min-width: 16px;
+    background: 97% 50%;
+    background-repeat: no-repeat;
+    border: 1px solid rgba(255, 250, 250, 0.5);
+    color: white;
+    font-weight: 900;
+}
+
+.hero-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.lang-btn {
+    font-size: 14px;
+    line-height: 20px;
+    height: 32px;
+    width: 122.4px;
+    text-align: left;
+    min-height: 16px;
+    min-width: auto;
+    border-radius: 4px;
+    margin-right: 15px;
+    background-color: rgba(41, 5, 5, 0.1);
+    color: white;
+    border: 1px solid rgba(244, 240, 240, 0.5);
+    text-align: center;
+}
+
+.lang-btn svg {
+    filter: invert(10);
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 70vw;
+    color: white;
+}
+
+.secimage {
+    position: relative;
+
+}
+
+.secimage img {
+    width: 35vw;
+    position: relative;
+    z-index: 10;
+}
+
+.secimage video {
+    position: absolute;
+    top: 51px;
+    right: 0;
+    height: 363px;
+    width: 478px;
+}
+
+.first div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.first div :first-child {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.first div :nth-child(2) {
+    font-size: 24px;
+    margin-top: 16px;
+}
+
+.third video {
+    height: 186px;
+    width: 545px;
+}
+
+.hero-btns input {
+    font-size: 16px;
+    text-align: left;
+    padding: 12px 24px;
+    height: 28px;
+    border-radius: 4px;
+    width: 337px;
+    min-height: 16px;
+    min-width: 16px;
+    background: 97% 50%;
+    background-repeat: no-repeat;
+    border: 1px solid rgba(255, 250, 250, 0.5);
+    color: white;
+    font-weight: 900;
+}
+
+.faq {
+    color: white;
+    padding: 34px;
+}
+
+.faq h1 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.faqbox {
+    display: flex;
+    font-size: 24px;
+    cursor: pointer;
+    justify-content: space-between;
+    background-color: #2e2a2a;
+    padding: 24px;
+    max-width: 75vw;
+    margin: 34px auto;
+    transition: all 1s ease-out;
+}
+
+.faqbox:hover {
+    background-color: #414141;
+}
+
+.faqbox :nth-child(2) {
+    font-size: 25px;
+}
+
+.faqbox svg {
+    filter: invert(1);
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+.footer .footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 34px;
+}
+
+footer {
+    color: #d2d2c2;
+    max-width: 80vw;
+    font-size: 14px;
+    margin: auto;
+}
+
+.footer a {
+    color: #d2d2c2;
+}
+
+footer .questions {
+    font-size: 16px;
+    padding: 34px 0;
+}
+
+@media screen and (max-width:1300px) {
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+    .lang-btn{
+        margin-left: 100px;
+        margin-bottom: 10px;
+        border: 2px solid white;
+        width: 90px;
+    }
+    .btn-red-sm{
+        margin-left: 100px;
+    }
+    .btn-red{
+        font-size: 12px;
+        width: 130px;
+    }
+    .hero-btns input{
+        width: 173px;
+    }
+    .hero-btns{
+        margin-bottom: 50px;
+    }
+    .first div{
+        flex-direction: column;
+    }
+    .first div :first-child{
+        font-size: 35px;
+    }
+    .first div :nth-child(2){
+        font-size: 20px;
+    }
+    .footer {
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer .footer-item {
+        gap: 20px;
+    }
+    .footer a {
+        margin-right: 20px;
+    }
+    .first{
+        display: block;
+        text-align: center;
+    }
+    .secimage img{
+        height: 230px;
+        width: 300px;
+    }
+    .first .secimage video{
+        height: 160px;
+        width: 260px;
+        top: 0px;
+    }
+    .third .secimage video{
+        height: 174px;
+        width: 190px;
+        top: -30px;
+        right: 18px;
+    }
+    .first{
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}

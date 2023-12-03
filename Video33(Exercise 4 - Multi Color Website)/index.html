@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiColor Website</title>
+    <style>
+        :root{
+            --contentcolor : aqua;
+            --navcolor : yellow;
+            --bgcolor : beige;
+            --listcolor : aliceblue;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color:var(--bgcolor);
+        }
+        li{
+            list-style: none;
+            padding: 5px 15px;
+            border: 2px solid black;
+            border-radius: 15px;
+            margin: 0px 15px 0px 0px;
+            background-color: var(--listcolor);
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        ul{
+            display: flex;
+        }
+        .navbar{
+            background-color: var(--navcolor);
+            padding: 10px;
+        }
+        .content{
+            background-color: var(--contentcolor);
+            padding: 25px;
+        }
+    </style>
+</head>
+<body>
+    <!-- We have to design a navbar and then we have to use variables in CSS stylesheet to change the navbar contrast and color -->
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Social</li>
+                <li>Contact</li>
+                <li>More</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima vel, ut voluptates praesentium doloremque voluptatibus, commodi ea error nisi perspiciatis tempore quis, reiciendis ipsam quasi harum? Provident, dolor odio neque quae tenetur nam sunt eveniet sed corrupti, vero nesciunt. Eos, eaque repudiandae autem, possimus placeat hic obcaecati optio iste officia perferendis nemo, tempore quis a expedita! </p>
+    </div>
+</body>
+</html>

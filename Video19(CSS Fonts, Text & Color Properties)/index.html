@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Text and Color Properties</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap" rel="stylesheet"> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&family=Caveat:wght@700&family=Dancing+Script:wght@500&display=swap');
+        h1{
+            font-family: 'Caveat', cursive;
+            letter-spacing: 10px; /*SPace between letters*/
+        }
+        p{
+            /* font-family :'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+            font-family: 'Dancing Script', cursive;
+            font-size: 25px;
+            line-height: 3; /*Height between lines*/
+            /* font-style:italic;
+            
+            text-decoration:underline; */
+        }
+        h2{
+            text-align: center;
+            text-transform: capitalize; /*Capitalizes the first letter. There are also different attributes like uppercase,lowercase*/
+            text-decoration: underline;
+            text-decoration-color: rgb(0, 129, 129);
+            text-decoration-style:wavy;
+            text-decoration-thickness: 3px;
+            text-indent: 40px;/*It will add indentation in front*/
+        }
+        .lorem{
+            border: 2px solid red;
+            width: 150px;
+            word-break: break-all;/*It will break the word and occupy the space*/
+            /* text-overflow: ellipsis;
+            overflow: hidden; */
+        }
+    </style>
+</head>
+<body>
+    <h1>Fonts</h1>
+    <h2>about fonts</h2>
+    <p>This is Tuhin Sunny</p>
+    <p class="lorem">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit ipsa enim natus magnam ipsum deserunt facilis vitae, adipisci consequuntur vero cum ex earum, reiciendis quas doloribus eos atque sed illo explicabo aliquid. Omnis inventore, iusto delectus commodi voluptatem laudantium in corrupti accusamus distinctio eius ducimus.</p>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Lists using CSS</title>
+    <style>
+        nav ul li{
+            list-style: devanagari;
+            background-color: yellow;
+            list-style-position: inside;/*Will bring the marker inside the list*/
+            border: 2px solid rgb(0, 0, 0);
+            /* list-style-image: url("https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_640.jpg"); We can use image as marker in place of 1,2,3 or devanagari*/
+            list-style-type : "😂"; /*We can set the marker as emoji*/
+            /* list-style: disc inside url("https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510_640.jpg"); We can use it together */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Design</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .card-cover{
+            border: 3px solid pink;
+            height: 95vh;
+            width : 26vw;
+            margin-left: 35%;
+            margin-top: 20px;
+            border-radius: 15px;
+        }
+        .image{
+            padding: 10px;
+        }
+        button:first-child{
+            margin-left: 30px;
+            margin-right: 10px;
+        }
+        span button{
+            color: rgb(180 168 169);
+            background-color: white;
+            padding: 4px 12px;
+            border-radius: 15px;
+            border: 2px solid pink;
+            font-size : 14px;
+        }
+        h1{
+            margin-left: 20px;
+            margin-top: 20px;
+            font-family :'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        p{
+            margin : 15px;
+            color: rgb(155 142 143);
+            font-size: 20px;
+            font-family: 'Poiret One', sans-serif;
+            font-weight: 600;
+            line-height: 1.5;
+        }
+        .read{
+            color: blue;
+            background-color: #a9efef;
+            padding: 11px 30px;
+            border-radius: 20px;
+            margin-left: 35%;
+            border: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- card.png is a file which contains a card Image. Write html and css code to design this card. Use #html -->
+    <div class="card-cover">
+        <div class="image">
+            <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?size=626&ext=jpg&ga=GA1.1.34264412.1700352000&semt=sph" alt="" width="100%" height="300px" style="border-radius: 15px;">
+        </div>
+        <span>
+            <button><b>Nature</b></button>
+            <button><b>Lake</b></button>
+        </span>
+        <h1>Lago di Braies</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis facere porro praesentium laboriosam, accusamus possimus doloribus veritatis a quidem ab ipsum ea aut?</p>
+            <button class="read"><b>Read More</b></button>
+    </div>
+</body>
+</html>

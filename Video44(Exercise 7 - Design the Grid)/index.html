@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 6 - Solution</title>
+    <style>
+        *{
+            margin: 5px;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .logo img{
+            width: 165px;
+            padding-right: 25px ;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .right ul{
+            display: flex;
+        }
+        .right ul li{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        .right ul li span{
+            padding: 0px 0px;
+        }
+        .heading h1{
+            font-weight: 400;
+            font-size: 48px;
+            padding-right: 10px;
+        }
+        .heading{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 50px;
+            padding-bottom: 10px;
+        }
+        .subheading p{
+            text-align: center;
+            font-size: 24px;
+            line-height: 1.3em;
+        }
+        .versionbutton{
+            text-align: center;
+            padding-top: 15px;
+        }
+        .versionbutton button:hover{
+            background-color: #25a3b6;
+            cursor : pointer;
+        }
+        .versionbutton button{
+            background-color: #00b6d1;
+            color: white;
+            padding: 14px;
+            font-weight: bold;
+            border: 0;
+            border-radius: 6px;
+        }
+        .grids{
+            display: grid;
+            grid-template-columns: 300px 300px 300px;
+            gap: 30px;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .boxes{
+            background-color: #f9f9f9;
+        }
+        .boxes h2{
+            font-size: 20px;
+            text-align: center;
+            padding-top: 15px;
+            padding-bottom: 5px;
+        }
+        .boxes h3{
+            text-align: center;
+            font-weight: 400;
+            font-size: 12px;
+            padding-bottom: 15px;
+        }
+        .buttons{
+            display: flex;
+            justify-content: center;
+            padding-bottom: 32px;
+        }
+        .buttons button{
+            font-size: 12px;
+            padding: 8px 15px;
+            border-radius: 7px;
+            border: none;
+        }
+        .buttonfirst{
+            background-color: #09a6bd;
+            color: white;
+            font-weight: bold;
+        }
+        .buttonsecond{
+            background-color: #81c780;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/Dark-logo.png" alt="" >
+            </div>
+            <div class="right">
+                <ul>
+                    <li><span>Products </span><svg width="20" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        </li>
+                    <li><span>Pricing </span><svg width="20" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        </li>
+                    <li><span>Resources </span><svg width="20" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        </li>
+                    <li><span>About Us </span><svg width="20" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        </li>
+                    <li><img src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png" alt=""></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="heading">
+            <h1>Download <b>UltraEdit</b> for Windows</h1>
+            <img src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png" alt="" style="cursor: pointer;">
+        </div>
+        <div class="subheading">
+            <p>Download and try UltraEdit before you buy it! This download includes the full Windows</p>
+            <p>version of the text editor.</p>
+        </div>
+        <div class="versionbutton">
+            <button>DOWNLOAD MAC OR LINUX VERSION</button>
+        </div>
+        <div class="grids">
+            <div class="grid1 boxes">
+                <h2>English</h2>
+                <h3>&nbsp</h3>
+                <div class="buttons">
+                    <button class="buttonfirst">Download 32-bit</button>
+                    <button class="buttonsecond">Download 64-bit</button>
+                </div>
+
+            </div>
+            <div class="grid2 boxes">
+                <h2>Deutsch</h2>
+                <h3>German</h3>
+                <div class="buttons">
+                    <button class="buttonfirst">Download 32-bit</button>
+                    <button class="buttonsecond">Download 64-bit</button>
+                </div>
+            </div>
+            <div class="grid3 boxes">
+                <h2>Italiano</h2>
+                <h3>Italian</h3>
+                <div class="buttons">
+                    <button class="buttonfirst">Download 32-bit</button>
+                    <button class="buttonsecond">Download 64-bit</button>
+                </div>
+            </div>
+            <div class="grid4 boxes">
+                <h2>Español</h2>
+                <h3>Spanish</h3>
+                <div class="buttons">
+                    <button class="buttonfirst">Download 32-bit</button>
+                    <button class="buttonsecond">Download 64-bit</button>
+                </div>
+            </div>
+            <div class="grid5 boxes">
+                <h2>français</h2>
+                <h3>French</h3>
+                <div class="buttons">
+                    <button class="buttonfirst">Download 32-bit</button>
+                    <button class="buttonsecond">Download 64-bit</button>
+                </div>
+            </div>
+            <div class="grid6 boxes">
+                <h2>Português brasileiro</h2>
+                <h3>Brazilian Portuguese</h3>
+                <div class="buttons">
+                    <button class="buttonfirst">Download 32-bit</button>
+                    <button class="buttonsecond">Download 64-bit</button>
+                </div>
+            </div>
+            <div class="grid7 boxes">
+                <h2>日本</h2>
+                <h3>Japanese</h3>
+                <div class="buttons">
+                    <button class="buttonfirst">Download 32-bit</button>
+                    <button class="buttonsecond">Download 64-bit</button>
+                </div>
+            </div>
+            <div class="grid8 boxes">
+                <h2>한국어</h2>
+                <h3>Korean</h3>
+                <div class="buttons">
+                    <button class="buttonfirst">Download 32-bit</button>
+                    <button class="buttonsecond">Download 64-bit</button>
+                </div>
+            </div>
+            <div class="grid9 boxes">
+                <h2>中国</h2>
+                <h3>Chinese</h3>
+                <div class="buttons">
+                    <button class="buttonfirst">Download 32-bit</button>
+                    <button class="buttonsecond">Download 64-bit</button>
+                </div>
+            </div>
+            <div class="grid10 boxes">
+                <h2>中國</h2>
+                <h3>Traditional Chinese</h3>
+                <div class="buttons">
+                    <button class="buttonfirst">Download 32-bit</button>
+                    <button class="buttonsecond"> Download 64-bit</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

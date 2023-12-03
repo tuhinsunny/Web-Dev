@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        .container{
+            height: 80vh;
+            width: 30vw;
+            background-color: rgb(27, 139, 139);
+        }
+        .box{
+            height: 45px;
+            width: 34px;
+            /* animation: tuhinKaAnimation;
+            animation-duration: 1s;
+            animation-iteration-count: 3;
+            /* animation-iteration-count: infinite; */
+            /* animation-timing-function: ease-in-out; */
+            /* animation-timing-function: cubic-bezier(1, 0.05, 0, 0.81); */
+            /* animation-delay: 3s; */
+            /* animation-direction: alternate-reverse; */
+            /* animation-play-state: paused; */ 
+            /* animation: tuhinKaAnimation 3s ease-in-out 1s 1 forwards;fill mode can be forwards, backwards */
+            /*For forward it will retain the properties when moves forwards i.e. to . And for backwards, it will retain the preperties when it was backwards i.e. from*/
+            animation: tuhinKaAnimation 2s ease-in-out 3s 1,
+                        tuhin2 3s ease-in-out 3s 1;
+        }
+        @keyframes tuhinKaAnimation{
+            from{
+                background-color: red;
+            }
+            to{
+                background-color: yellow;
+                transform: translateX(1000px);
+            }
+        }
+        @keyframes tuhin2{
+            0%{
+                transform: rotate(100deg);
+            }
+            20%{
+                transform: rotate(200deg);
+            }
+            40%{
+                transform: rotate(220deg);
+            }
+            60%{
+                transform: rotate(280deg);
+            }
+            80%{
+                transform: rotate(300deg);
+            }
+            100%{
+                transform: rotate(330deg);  
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>

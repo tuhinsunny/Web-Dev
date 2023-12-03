@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Shadows and Outlines</title>
+    <style>
+        .box{
+            border: 3px solid black;
+            padding : 25px; 
+            box-shadow: 8px 9px 12px 4px #000000; /*box-shadow: h-offset v-offset blur spread color inset;*/
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 4px #888888; /*text-shadow: h-offset v-offset blur color;*/
+            outline: 2px solid rgb(0, 0, 0);
+            border: 2px solid rgb(255, 191, 0);/*Border andar hoga aur outline bahar*/
+            outline-offset: 5px;
+            border-radius: 35px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is a boxn
+    </div>
+    <p class="text-shadow">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed ut quam doloremque!
+    </p>
+</body>
+</html>

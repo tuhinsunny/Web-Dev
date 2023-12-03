@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Queries</title>
+    <style>
+        body{
+            background-color: red;
+        }
+        @media only screen and (max-width:455px) { /*455px se chota huya to yeh css lagega*/
+            body{
+                background-color: blue;
+            }
+            .boxes{
+                flex-direction: column;
+            }
+        }
+        @media screen and (orientation: landscape) {/*If orientation is landscape then the property will be shown. We can also use portrait*/
+            body{
+                border: 2px solid purple;
+            }
+        }
+        /* @media not|only mediatype and (expressions) {
+            CSS Code
+        } */
+        .box{
+            height: 344px;
+            width: 566px;
+            background-color: aqua;
+            padding: 3px;
+            margin: 3px;
+        }
+        .boxes{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        I am a bg color red guy
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 6 - Navbar using Flexbox</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            margin: 15px;
+            height: 60px;
+        }
+
+        .contents>ul {
+            display: flex;
+            list-style: none;
+            padding: 1em;
+            font-size: 17px;
+        }
+        li{
+            padding-right: 35px;
+        }
+        .icon {
+            padding-right: 10px
+        }
+
+        .companyname {
+            align-items: end;
+        }
+
+        .companyname>h1 {
+            font-size: 30px;
+            padding-right: 45vw;
+        }
+        .companyname p{
+            font-size: 10px;
+        }
+        .translateicon {
+            padding-top: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="icon"><img src="/u.png" alt="" height="60px"></div>
+            <div class="companyname">
+                <h1>UltraEdit</h1>
+                <p>An Idera , Inc. Company</p>
+            </div>
+            <div class="contents">
+                <ul>
+                    <li>Products</li>
+                    <li>Pricing</li>
+                    <li>Resources</li>
+                    <li>About Us</li>
+                </ul>
+            </div>
+            <div class="translateicon">
+                <img src="/translate.png" alt="" height="30px">
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
